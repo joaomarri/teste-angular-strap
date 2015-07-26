@@ -1,0 +1,17 @@
+﻿Para executar esse projeto na maquina local precisa instalar algum http-server, no caso de executar no Chrome pois esse browser não permiti cross-orin:
+
+-- se não tiver o node instalado em sua maquina - (fazer o download do node em: https://nodejs.org/download/ e instalar)
+
+-- Executar o camando para instalar o http-server via npm:
+
+npm install http-server -g 
+
+vá para o diretório onde esta a aplicação e execute o seguinte comando:
+
+http-server
+
+Para verificar a aplicação abra o browser e digite:
+
+http://localhost:8080/
+
+Obs: nos demais browsers não é necessário instalar algum server, apenas abra a pagina index.html para carregar o sistema.

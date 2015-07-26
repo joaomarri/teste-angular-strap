@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h2 class="page-header">Shot Detail</h2>
+		</div>
+	</div>
+	
+	<div id="load-ajax" class="loading-spiner-holder" data-loading ><div id="shotsLoading" class="loading-spiner text-center">Loading ... </div></div>
+	
+	<div class="row">
+		<div class="col-sm-4">
+			<img alt="{{shot.title}}" class="img-responsive" src="{{ shot.image_url }}" >
+			<h4 class="text-center">{{ shot.title }}</h4>
+		</div>
+		
+		<div class="col-sm-4">
+			<div class="row">
+				<h4 class="text-left">{{shot.player.name}}</h4>
+				<img alt="{{shot.player.name}}" class="img-responsive col-xs-4" src="{{ shot.player.avatar_url }}" >
+			</div>
+		</div>
+	</div>
+</div>

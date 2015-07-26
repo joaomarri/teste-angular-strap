@@ -1,0 +1,48 @@
+<div class="container" ng-controller="PageCtrl">
+
+    <!-- Popular shots -->
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h2 class="page-header">Popular Shots</h2>
+        </div>
+
+    </div>
+	
+	<div id="load-ajax" class="loading-spiner-holder" data-loading ><div id="shotsLoading" class="loading-spiner text-center">Loading ... </div></div>
+	
+	<div class="row">
+		<ul class="list-unstyled">
+			<li ng-repeat="shot in shots">
+				<div class="col-sm-4">
+					<img alt="{{shot.title}}" ng-click="showDetail(shot.id)" class="img-responsive" src="{{ shot.image_url }}" data-item="{{shot.id}}">
+					<h4 class="text-center">{{ shot.title }}</h4>
+				</div>
+ 
+			</li>
+		</ul>
+	</div>
+    
+    <div class="row">
+        <div class="row text-center">
+            <pagination boundary-links="true" ng-click="pageChanged()" total-items="totalItems" ng-model="currentPage" max-size="maxSize"                   class="pagination" previous-text="&lsaquo;"                        next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;">
+            </pagination>
+        </div>
+    </div>
+    
+<button type="button" class="btn btn-primary" bs-aside="aside">Click to toggle aside
+  <br>
+  <small>(using an object)</small>
+</button>
+    
+
+<button type="button" class="btn btn-danger" data-template="templates/contato.tpl.html" data-placement="left" data-animation="am-slide-left" bs-aside="asideContato" data-container="body">Add Contato
+  <br>
+  <small>(using data-template)</small>
+</button>
+    
+
+
+</div>
+<!-- /.container -->

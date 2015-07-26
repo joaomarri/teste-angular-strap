@@ -1,0 +1,29 @@
+<div class="aside" tabindex="-1" role="dialog">
+  <div class="aside-dialog">
+    <div class="aside-content">
+      <div class="aside-header" ng-show="title">
+        <button type="button" class="close" ng-click="$hide()">&times;</button>
+        <h4 class="aside-title" ng-bind="title"></h4>
+      </div>
+      <div class="aside-body">
+        <div style="margin-left: 15px; margin-right: 15px;">  
+        <div class="row">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" class="form-control" ng-bind="nome" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Telefone</label>
+                <input type="text" name="telefone" class="form-control" ng-bind="telefone" />
+            </div>
+        </div> 
+      </div>
+      <div class="aside-footer">
+        <button type="button" class="btn btn-default" ng-click="$hide()">Cancelar</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
