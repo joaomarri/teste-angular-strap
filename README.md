@@ -1,8 +1,7 @@
-# PopularShots
+# Test Component Angular Strap
 
-Client-side application, Angularjs, in order to test the Dribbble API and show the most popular shots:
+Client-side application, Angularjs, in order to test the Angular Strap
 
-Example popular shots: http://api.dribbble.com/shots/popular?page=1
+http://mgcrea.github.io/angular-strap/
 
-Example of the shot's detail: http://api.dribbble.com/shots/1757954
 

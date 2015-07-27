@@ -103,7 +103,7 @@ app.controller('PageCtrl', function ($scope, $location, $http, ShotsPage) {
   
   $scope.aside = {title: 'Title', content: 'Hello Aside<br />This is a multiline message to Joao!'};
 
-  $scope.asideContato = {title: 'Contato'};
+  $scope.asideContato = {title: 'Contato', nome:'Joao', telefone:'4563321'};
     
 });
 
